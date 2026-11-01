@@ -1,0 +1,234 @@
+Microsoft Windows [Version 10.0.26200.9711]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\DELL>pipenv --version
+pipenv, version 2026.10.4
+
+C:\Users\DELL>cd C:\Users\DELL\OneDrive\Desktop\storefront
+
+C:\Users\DELL\OneDrive\Desktop\storefront>pipenv install django
+Creating a virtualenv for this project
+Pipfile: C:\Users\DELL\OneDrive\Desktop\storefront\Pipfile
+Using default python from
+C:\Users\DELL\AppData\Local\Microsoft\WindowsApps\PythonSoftware
+Foundation.Python.3.12_qbz5n2kfra8p0\python.exe 3.12.10 to
+create virtualenv...
+[    ] Creating virtual environment...created virtual environment CPython3.12.10.final.0-64-x86_64 in
+16603ms
+  creator
+Venv(dest=C:\Users\DELL\.virtualenvs\storefront-hkDeGIpK,
+clear=False, no_vcs_ignore=False, venv_redirect=None,
+global=False, describe=CPython3Windows)
+  seeder FromAppData(download=False, pip=bundle, via=copy,
+app_data_dir=C:\Users\DELL\AppData\Local\Packages\PythonSoftware
+Foundation.Python.3.12_qbz5n2kfra8p0\LocalCache\Local\pypa\virtu
+alenv\Cache)
+    added seed packages: pip==26.2.2
+  activators
+BashActivator,BatchActivator,FishActivator,NushellActivator,Powe
+rShellActivator,PythonActivator,XonshActivator
+
+Successfully created virtual environment!
+Virtualenv location: C:\Users\DELL\.virtualenvs\storefront-hkDeGIpK
+Creating a Pipfile for this project...
+Pipfile.lock not found, creating...
+Locking  dependencies...
+Locking  dependencies...
+Updated Pipfile.lock
+(702ad05de9bc9de99a4807c8dde1686f31e0041d7b5f6f6b74861195a52110f
+5)!
+To activate this project's virtualenv, run pipenv shell.
+Alternatively, run a command inside the virtualenv with pipenv
+run.
+Installing django...
+Installation Succeeded
+To activate this project's virtualenv, run pipenv shell.
+Alternatively, run a command inside the virtualenv with pipenv
+run.
+Installing dependencies from Pipfile.lock (2110f5)...
+All dependencies are now up-to-date!
+Upgrading django in  dependencies.
+Building requirements...
+Resolving dependencies...
+Success!
+To activate this project's virtualenv, run pipenv shell.
+Alternatively, run a command inside the virtualenv with pipenv
+run.
+Installing dependencies from Pipfile.lock (e35515)...
+All dependencies are now up-to-date!
+Installing dependencies from Pipfile.lock (e35515)...
+
+C:\Users\DELL\OneDrive\Desktop\storefront>ls
+'ls' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\DELL\OneDrive\Desktop\storefront>cd C:\Users\DELL\.virtualenvs\storefront-hkDeGIpK
+
+C:\Users\DELL\.virtualenvs\storefront-hkDeGIpK>ls
+'ls' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\DELL\.virtualenvs\storefront-hkDeGIpK>cd C:\Users\DELL\OneDrive\Desktop\storefront>
+The syntax of the command is incorrect.
+
+C:\Users\DELL\.virtualenvs\storefront-hkDeGIpK>cd C:\Users\DELL\OneDrive\Desktop\storefront
+
+C:\Users\DELL\OneDrive\Desktop\storefront>code
+
+C:\Users\DELL\OneDrive\Desktop\storefront>pinenv shell
+'pinenv' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\DELL\OneDrive\Desktop\storefront>pipenv shell
+Launching subshell in virtual environment...
+Microsoft Windows [Version 10.0.26200.9711]
+(c) Microsoft Corporation. All rights reserved.
+
+(storefront-hkDeGIpK) C:\Users\DELL\OneDrive\Desktop\storefront
+(storefront-hkDeGIpK) C:\Users\DELL\OneDrive\Desktop\storefront>django-admin
+
+Type 'django-admin help <subcommand>' for help on a specific subcommand.
+
+Available subcommands:
+
+[django]
+    check
+    compilemessages
+    createcachetable
+    dbshell
+    diffsettings
+    dumpdata
+    flush
+    inspectdb
+    loaddata
+    makemessages
+    makemigrations
+    migrate
+    optimizemigration
+    runserver
+    sendtestemail
+    shell
+    showmigrations
+    sqlflush
+    sqlmigrate
+    sqlsequencereset
+    squashmigrations
+    startapp
+    startproject
+    test
+    testserver
+Note that only Django core commands are listed as settings are not properly configured (error: Requested setting INSTALLED_APPS, but settings are not configured. You must either define the environment variable DJANGO_SETTINGS_MODULE or call settings.configure() before accessing settings.).
+
+(storefront-hkDeGIpK) C:\Users\DELL\OneDrive\Desktop\storefront>django-admin startproject storefront
+
+(storefront-hkDeGIpK) C:\Users\DELL\OneDrive\Desktop\storefront>django-admin startproject storefront .
+
+(storefront-hkDeGIpK) C:\Users\DELL\OneDrive\Desktop\storefront>python manage.py
+
+Type 'manage.py help <subcommand>' for help on a specific subcommand.
+
+Available subcommands:
+
+[auth]
+    changepassword
+    createsuperuser
+
+[contenttypes]
+    remove_stale_contenttypes
+
+[django]
+    check
+    compilemessages
+    createcachetable
+    dbshell
+    diffsettings
+    dumpdata
+    flush
+    inspectdb
+    loaddata
+    makemessages
+    makemigrations
+    migrate
+    optimizemigration
+    sendtestemail
+    shell
+    showmigrations
+    sqlflush
+    sqlmigrate
+    sqlsequencereset
+    squashmigrations
+    startapp
+    startproject
+    test
+    testserver
+
+[sessions]
+    clearsessions
+
+[staticfiles]
+    collectstatic
+    findstatic
+    runserver
+
+(storefront-hkDeGIpK) C:\Users\DELL\OneDrive\Desktop\storefront>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+November 01, 2026 - 12:46:53
+Django version 6.1.2, using settings 'storefront.settings'
+Starting WSGI development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.1/howto/deployment/
+[01/Nov/2026 12:48:01] "GET / HTTP/1.1" 200 12149
+Not Found: /favicon.ico
+[01/Nov/2026 12:48:01] "GET /favicon.ico HTTP/1.1" 404 2284
+
+(storefront-hkDeGIpK) C:\Users\DELL\OneDrive\Desktop\storefront>django-admin runserver
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\DELL\.virtualenvs\storefront-hkDeGIpK\Scripts\django-admin.exe\__main__.py", line 5, in <module>
+  File "C:\Users\DELL\.virtualenvs\storefront-hkDeGIpK\Lib\site-packages\django\core\management\__init__.py", line 443, in execute_from_command_line
+    utility.execute()
+  File "C:\Users\DELL\.virtualenvs\storefront-hkDeGIpK\Lib\site-packages\django\core\management\__init__.py", line 437, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+  File "C:\Users\DELL\.virtualenvs\storefront-hkDeGIpK\Lib\site-packages\django\core\management\base.py", line 422, in run_from_argv
+    self.execute(*args, **cmd_options)
+  File "C:\Users\DELL\.virtualenvs\storefront-hkDeGIpK\Lib\site-packages\django\core\management\commands\runserver.py", line 69, in execute
+    super().execute(*args, **options)
+  File "C:\Users\DELL\.virtualenvs\storefront-hkDeGIpK\Lib\site-packages\django\core\management\base.py", line 463, in execute
+    self.check(**check_kwargs)
+  File "C:\Users\DELL\.virtualenvs\storefront-hkDeGIpK\Lib\site-packages\django\core\management\base.py", line 498, in check
+    all_issues = checks.run_checks(
+                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\.virtualenvs\storefront-hkDeGIpK\Lib\site-packages\django\core\checks\registry.py", line 96, in run_checks
+    databases = list(connections)
+                ^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\.virtualenvs\storefront-hkDeGIpK\Lib\site-packages\django\utils\connection.py", line 73, in __iter__
+    return iter(self.settings)
+                ^^^^^^^^^^^^^
+  File "C:\Users\DELL\.virtualenvs\storefront-hkDeGIpK\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\.virtualenvs\storefront-hkDeGIpK\Lib\site-packages\django\utils\connection.py", line 45, in settings
+    self._settings = self.configure_settings(self._settings)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\.virtualenvs\storefront-hkDeGIpK\Lib\site-packages\django\db\utils.py", line 151, in configure_settings
+    databases = super().configure_settings(databases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\.virtualenvs\storefront-hkDeGIpK\Lib\site-packages\django\utils\connection.py", line 50, in configure_settings
+    settings = getattr(django_settings, self.settings_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\.virtualenvs\storefront-hkDeGIpK\Lib\site-packages\django\conf\__init__.py", line 122, in __getattr__
+    self._setup(name)
+  File "C:\Users\DELL\.virtualenvs\storefront-hkDeGIpK\Lib\site-packages\django\conf\__init__.py", line 102, in _setup
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: Requested setting DATABASES, but settings are not configured. You must either define the environment variable DJANGO_SETTINGS_MODULE or call settings.configure() before accessing settings.
+
+(storefront-hkDeGIpK) C:\Users\DELL\OneDrive\Desktop\storefront>perviously no error occured but now error is there
